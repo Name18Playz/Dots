@@ -1,0 +1,84 @@
+#Alacritty:
+
+env:
+  TERM: alacritty
+
+window:
+  opacity: 0.8
+  padding:
+    x: 25
+    y: 25
+
+    dynamic_padding:  true
+    decoration: none
+
+font:
+  normal:
+    family: Source Code Pro
+
+  bold:
+    family: Source Code Pro
+
+  italic:
+    family: Source Code Pro
+
+  bold_italic:
+    family: Source Code Pro
+
+  size: 9
+
+colors:
+  # Default colors
+  primary:
+    background: '0x282828'
+    foreground: '0xdfbf8e'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x212121'
+    cursor: '0xeeffff'
+
+  # Normal colors
+  normal:
+    black:   '0x665c54'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe78a4e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
+
+  # Bright colors
+  bright:
+    black:   '0x928374'
+    red:     '0xea6962'
+    green:   '0xa9b665'
+    yellow:  '0xe3a84e'
+    blue:    '0x7daea3'
+    magenta: '0xd3869b'
+    cyan:    '0x89b482'
+    white:   '0xdfbf8e'
+
+  indexed_colors:
+    - { index: 16, color: '0xf78c6c' }
+    - { index: 17, color: '0xff5370' }
+    - { index: 18, color: '0x303030' }
+    - { index: 19, color: '0x353535' }
+    - { index: 20, color: '0xb2ccd6' }
+    - { index: 21, color: '0xeeffff' }
+
+# cursor:
+#   style: Underline
+
+#   unfocused_hollow: false
+
+live_config_reload: true
+                 
+key_bindings:
+
+  - { key: Key0, mods: Control, action: ResetFontSize }
+
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
