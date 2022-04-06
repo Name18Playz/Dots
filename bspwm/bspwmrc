@@ -1,5 +1,5 @@
 #! /bin/sh
-
+# Edit the directory of the feh --bg-fill to ur choice
 pgrep -x sxhkd > /dev/null || sxhkd &
 picom  &
 bspc monitor -d I II III IV V
